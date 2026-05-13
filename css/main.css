@@ -63,6 +63,7 @@ background: linear-gradient(13deg, rgba(2, 0, 36, 1) 0%, rgb(21, 21, 62) 35%, rg
   flex-direction: column;
   gap: 2.5rem;
   padding-left: 2%;
+  max-width: 600px;
 }
 
 .cabecalho {
@@ -90,12 +91,13 @@ background: linear-gradient(13deg, rgba(2, 0, 36, 1) 0%, rgb(21, 21, 62) 35%, rg
 }
 
 .apresentacao-titulo {
-  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
   font-family: "Krona One", sans-serif;
   color: #22D4FD;
   text-align: left;
-  line-height: 1.1;
+  line-height: 1.2;
   margin-bottom: 0.5rem;
+  max-width: 550px;
 }
 
 .apresentacao-titulo:hover {
@@ -103,10 +105,11 @@ color: yellow;
 }
 
 .apresentacao-paragrafo {
-  font-size: clamp(1rem, 1.25vw, 1.35rem);
-  line-height: 1.8;
+  font-size: clamp(1rem, 1.25vw, 1.25rem);
+  line-height: 1.6;
   text-align: justify;
   letter-spacing: 0.3px;
+  max-width: 550px;
 }
 
 .apresentacao-links {
@@ -115,6 +118,7 @@ color: yellow;
   gap: 1rem;
   width: 100%;
   margin-top: 1rem;
+  max-width: 360px;
 }
 
 .apresentacao-links-subtitulo {
@@ -183,10 +187,10 @@ padding: 12px;
   font-size: 1.125rem;
   text-align: justify;
   padding: 0 2%;
-  max-width: 100%;
+  max-width: 700px;
   width: 100%;
   margin: 0 auto;
-  line-height: 1.8;
+  line-height: 1.6;
   letter-spacing: 0.3px;
 }
 
@@ -209,6 +213,19 @@ padding: 12px;
   .apresentacao-conteudo {
     width: 100%;
     padding-left: 1%;
+    max-width: 100%;
+  }
+
+  .apresentacao-titulo {
+    max-width: 100%;
+  }
+
+  .apresentacao-paragrafo {
+    max-width: 100%;
+  }
+
+  .apresentacao-links {
+    max-width: 100%;
   }
 }
 
@@ -220,6 +237,7 @@ padding: 12px;
 
   .apresentacao-conteudo {
     width: 100%;
+    max-width: 100%;
   }
 
   .cabecalho-menu {
@@ -235,6 +253,7 @@ padding: 12px;
 
   .apresentacao-links {
     align-items: center;
+    max-width: 100%;
   }
 
   .apresentacao-links2 {
@@ -246,6 +265,15 @@ padding: 12px;
   .conteudo-texto {
     padding: 0 1%;
     width: 100%;
+    max-width: 100%;
+  }
+
+  .apresentacao-titulo {
+    max-width: 100%;
+  }
+
+  .apresentacao-paragrafo {
+    max-width: 100%;
   }
 }
 
@@ -260,14 +288,17 @@ padding: 12px;
 
   .apresentacao-conteudo {
     width: 100%;
+    max-width: 100%;
   }
 
   .apresentacao-titulo {
     font-size: 1.8rem;
+    max-width: 100%;
   }
 
   .apresentacao-paragrafo {
     font-size: 1rem;
+    max-width: 100%;
   }
 
   .apresentacao-links-subtitulo {
@@ -281,5 +312,6 @@ padding: 12px;
   .conteudo-texto {
     padding: 0;
     width: 100%;
+    max-width: 100%;
   }
 }
