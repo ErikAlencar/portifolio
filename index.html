@@ -6,19 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Portfólio</title>
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 
 <body>
-
-    <div class="video-background">
-        <video autoplay muted loop playsinline id="video-bg" >
-            <source src="video.mp4" type="video/mp4">
-            Seu navegador não suporta vídeo de fundo.
-        </video>
-        <div class="video-overlay"></div>
-    </div>
+<div id="particles-js"></div>
 
     <div class="site-content">
         <header class="cabecalho">
@@ -34,7 +30,7 @@
 
             <div>
 
-                <h1 class="apresentacao-titulo">
+                <h1 class="apresentacao-titulo animate__animated animate__flipInX">
                     Eleve seu negócio digital a outro nível com um front-end de qualidade
                 </h1>
 
@@ -45,27 +41,22 @@
                     Ajudo pequenos negócios e designers a colocarem em prática boas ideias.
                 </p>
 
+                <h2 class="apresentacao-links-subtitulo">Acesse minhas redes</h2>
+
                 <div class="apresentacao-links">
 
-                    <h2 class="apresentacao-links-subtitulo">
-                        Acesse minhas redes:
-                    </h2>
-
                     <a class="apresentacao-links2" href="https://www.instagram.com" target="_blank">
-
-                        <img src="img/instagram.png" alt="Instagram">
+                        <img src="img/instagram.png" alt="Instagram" width="65px">
                         Instagram
                     </a>
 
                     <a class="apresentacao-links2" href="https://www.linkedin.com" target="_blank">
-
-                        <img src="img/linkedin.png" alt="LinkedIn">
+                        <img src="img/linkedin.png" alt="LinkedIn" width="65px">
                         Linkedin
                     </a>
 
                     <a class="apresentacao-links2" href="https://www.github.com" target="_blank">
-
-                        <img src="img/github.png" alt="Github">
+                        <img src="img/github.png" alt="Github" width="65px">
                         Github
                     </a>
 
@@ -75,15 +66,38 @@
 
         </section>
 
-        <img id="imagem-principal" src="img/modelo.png" alt="Joana Santos Desenvolvedora Front-end">
+        <img class="animate__animated animate__flipInX" id="imagem-principal" src="img/modelo.png" alt="Joana Santos Desenvolvedora Front-end">
 
     </main>
-
+    </div>
     <footer>
         Site desenvolvido por Erik de Alencar |
         Todos os direitos reservados © Copyright 2026
     </footer>
-    </div>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#ffffff" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.5, "random": false },
+                "size": { "value": 3, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 },
+                "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out" }
+            },
+            "interactivity": {
+                "events": {
+                    "onhover": { "enable": true, "mode": "grab" },
+                    "onclick": { "enable": true, "mode": "push" }
+                },
+                "modes": {
+                    "grab": { "distance": 140, "line_linked": { "opacity": 0.7 } },
+                    "push": { "particles_nb": 4 }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
 
 </body>
 
